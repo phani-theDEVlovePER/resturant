@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: sans-serif; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* navgation_section */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    /* background-color: antiquewhite; */
+    font-size: 18px;
+    position: sticky;
+    top: 0px;
+}
+
+
+#logo {
+    margin: 0px -4px 0 13px;
+}
+
+#logo img {
+    height: 40px;
+    margin: 3px 30px 3px 6px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    border-radius: 0 0 5px 5px;
+}
+
+#navbar ul li {
+    font-family: 'Bree Serif', serif;
+    list-style-type: none;
+    font-size: 1.3rem;
+    /* font-weight: bold; */
+    /* padding: 20px;
+    text-decoration-style: none; */
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    /* font-size: 1.3rem; */
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* home style */
+
+/* Home_section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 200px;
+    /* margin: 3px 200px 202px 200px; */
+    height: 589px;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url(./sources/bg1.png);
+    background-size: cover;
+    /* background: url(./sources/bg1.png) no-repeat center center/cover; */
+    height: 660px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+
+#home h1 {
+    color: white;
+    text-align: center;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* service section */
+
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    font-family: 'Bree Serif', serif;
+    border: 2px solid brown;
+    margin: 3px;
+    padding: 25px;
+    border-radius: 23px;
+    background-color: #ffecec;
+    cursor: pointer;
+}
+
+#services .box img {
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+/* client section */
+
+#client-section {
+    position: relative;
+    font-family: 'Bree Serif', serif;
+    font-size: 55px;
+    z-index: -1;   /* for oover lap*/
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    /* background: url(sources/bg2.jpg) no-repeat center center/cover; */
+    background-color: #350e0e;
+    border: 2px solid black;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-items {
+    padding: 34px;
+}
+
+#clients img {
+    height: 65px;
+    cursor: pointer;
+}
+
+/* contacts */
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(sources/bg2.jpg) no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.7;
+    border: 2px solid white;
+    border-radius: 0 0 20px 20px;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 15px;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+}
+
+#contact-box .contactbtn {
+    padding: 6px 20px;
+    /* border: 2px solid white; */
+    border-radius: 10px;
+    margin: 7px;
+    padding: 7px 28px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* footer_section */
+
+footer {
+    background: #000;
+    color: white;
+    padding: 9px 20px;
+    /* width: 100%; */
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+/* utility classes */
+.h-primary {
+    font-size: 60px;
+    padding: 18px 10px 10px 10px;
+}
+
+.costa {
+    font-size: 60px;
+    padding: 5px 10px 10px 10px;
+}
+
+.h-primary2 {
+    font-size: 55px;
+    padding: 18px 10px 10px 10px;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-secondary {
+    font-size: 32px;
+    padding: 12px;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: #9a5d426e;
+    color: white;
+    margin: 17px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
